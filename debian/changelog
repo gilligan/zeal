@@ -1,0 +1,91 @@
+zeal (0.0+1snapshot201305082353+0100-1quantal1) quantal; urgency=low
+
+  * Added quantal package
+
+ -- Jerzy Kozera <jerzy.kozera@gmail.com>  Wed, 08 May 2013 23:55:00 +0100
+
+zeal (0.0+1snapshot201305082353+0100-1precise1) precise; urgency=low
+
+  * Added precise package
+
+ -- Jerzy Kozera <jerzy.kozera@gmail.com>  Wed, 08 May 2013 23:54:00 +0100
+
+zeal (0.0+1snapshot201305082353+0100-1) raring; urgency=low
+
+  * Added qtbase5-private-dev Build-Depends
+  * Imported Upstream version 0.0+1snapshot201305082353+0100
+
+ -- Jerzy Kozera <jerzy.kozera@gmail.com>  Wed, 08 May 2013 23:53:21 +0100
+
+zeal (0.0+1snapshot201303281147+0000-1precise2) precise; urgency=low
+
+  * Precise package (previously not added properly...)
+
+ -- Jerzy Kozera <jerzy.kozera@gmail.com>  Thu, 28 Mar 2013 11:57:00 +0000
+
+zeal (0.0+1snapshot201303281147+0000-1precise1) quantal; urgency=low
+
+  * Precise package
+
+ -- Jerzy Kozera <jerzy.kozera@gmail.com>  Thu, 28 Mar 2013 11:48:00 +0000
+
+zeal (0.0+1snapshot201303281147+0000-1) quantal; urgency=low
+
+  * Added libqt5xml5 dependency
+  * Imported Upstream version 0.0+1snapshot201303281147+0000
+
+ -- Jerzy Kozera <jerzy.kozera@gmail.com>  Thu, 28 Mar 2013 11:47:54 +0000
+
+zeal (0.0+1snapshot201303211615+0000-2) precise; urgency=low
+
+  * Imported Upstream version 0.0+1snapshot201303211615+0000 for Precise
+
+ -- Jerzy Kozera <jerzy.kozera@gmail.com>  Thu, 21 Mar 2013 16:17:00 +0000
+
+zeal (0.0+1snapshot201303211615+0000-1) quantal; urgency=low
+
+  * Imported Upstream version 0.0+1snapshot201303211615+0000
+
+ -- Jerzy Kozera <jerzy.kozera@gmail.com>  Thu, 21 Mar 2013 16:15:57 +0000
+
+zeal (0.0+1snapshot201303210025+0000-2) precise; urgency=low
+
+  * Imported Upstream version 0.0+1snapshot201303210025+0000 for Precise
+
+ -- Jerzy Kozera <jerzy.kozera@gmail.com>  Thu, 21 Mar 2013 00:27:00 +0000
+
+zeal (0.0+1snapshot201303210025+0000-1) quantal; urgency=low
+
+  * Imported Upstream version 0.0+1snapshot201303210025+0000
+
+ -- Jerzy Kozera <jerzy.kozera@gmail.com>  Thu, 21 Mar 2013 00:25:59 +0000
+
+zeal (0.0+1snapshot201303192126+0000-3) precise; urgency=low
+
+  * g++-4.7 for Ubuntu Precise
+
+ -- Jerzy Kozera <jerzy.kozera@gmail.com>  Wed, 20 Mar 2013 20:21:35 +0000
+
+zeal (0.0+1snapshot201303192126+0000-2) precise; urgency=low
+
+  * Ubuntu Precise release
+
+ -- Jerzy Kozera <jerzy.kozera@gmail.com>  Tue, 20 Mar 2013 16:15:00 +0000
+
+zeal (0.0+1snapshot201303192126+0000-1) quantal; urgency=low
+
+  * Imported Upstream version 0.0+1snapshot201303192126+0000
+
+ -- Jerzy Kozera <jerzy.kozera@gmail.com>  Tue, 19 Mar 2013 21:26:42 +0000
+
+zeal (0.0+1snapshot201303171444+0000-2) quantal; urgency=low
+
+  * Fixed i386 build
+
+ -- Jerzy Kozera <jerzy.kozera@gmail.com>  Mon, 17 Mar 2013 14:44:00 +0000
+
+zeal (0.0+1snapshot201303171444+0000-1) quantal; urgency=low
+
+  * Initial release
+
+ -- Jerzy Kozera <jerzy.kozera@gmail.com>  Mon, 17 Mar 2013 14:44:00 +0000
