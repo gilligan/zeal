@@ -22,11 +22,12 @@ extern const QString serverName;
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
-    
+
 public:
     explicit MainWindow(QWidget *parent = 0);
+    void bringToFrontAndSearch(const QString searchTerm);
     ~MainWindow();
-    
+
 private:
     void bringToFront(bool withHack);
     Ui::MainWindow *ui;

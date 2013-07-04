@@ -5,6 +5,10 @@
 #include <string>
 #include <iostream>
 
+#include "searchif.h"
+#include "searchifadaptor.h"
+#include "queryservice.h"
+
 using namespace std;
 
 int main(int argc, char *argv[])
@@ -19,6 +23,22 @@ int main(int argc, char *argv[])
 
     QApplication a(argc, argv);
     MainWindow w;
+
+    QueryService* query = new QueryService(NULL, &w);
+    new SearchIfAdaptor(query);
+
+    QDBusConnection conn = QDBusConnection::sessionBus();
+    bool ret = conn.registerService("com.zeal");
+    if (!ret) {
+        std::cout << "Failed to register dbus service!" << std::endl;
+        return 1;
+    }
+    ret = conn.registerObject("/", query);
+    if (!ret) {
+        std::cout << "Failed to register object" << std::endl;
+        return 1;
+    }
+
     w.show();
     return a.exec();
 }

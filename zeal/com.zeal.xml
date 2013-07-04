@@ -1,0 +1,8 @@
+<node>
+  <interface name="com.zeal">
+    <method name="search">
+      <arg name="name" type="s" direction="in" />
+    </method>
+    <method name="ping"/>
+ </interface>
+</node>

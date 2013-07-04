@@ -22,6 +22,7 @@
 #include <QTemporaryFile>
 #include <QtConcurrent/QtConcurrent>
 #include <QFutureWatcher>
+#include <QKeyEvent>
 #include <quazip/quazip.h>
 #include "JlCompress.h"
 
@@ -350,6 +351,7 @@ MainWindow::MainWindow(QWidget *parent) :
        ui->treeView->activated(index);
     });
     connect(ui->treeView, &QTreeView::activated, [&](const QModelIndex& index) {
+        std::cout << "activated callback" << std::endl;
         if(!index.sibling(index.row(), 1).data().isNull()) {
             QStringList url_l = index.sibling(index.row(), 1).data().toString().split('#');
             QUrl url = QUrl::fromLocalFile(url_l[0]);
@@ -397,6 +399,17 @@ void MainWindow::createTrayIcon()
         }
     });
     trayIcon->show();
+}
+
+void MainWindow::bringToFrontAndSearch(const QString searchTerm)
+{
+    bringToFront(false);
+    zealSearch.setQuery(searchTerm);
+    ui->lineEdit->setText(searchTerm);
+    ui->treeView->setFocus();
+    ui->treeView->activated(ui->treeView->currentIndex());
+    QKeyEvent *event = new QKeyEvent (QEvent::KeyPress, Qt::Key_Enter, Qt::NoModifier, NULL);
+    QCoreApplication::postEvent(ui->treeView, event);
 }
 
 void MainWindow::bringToFront(bool withHack)

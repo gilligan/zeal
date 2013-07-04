@@ -4,7 +4,8 @@
 #
 #-------------------------------------------------
 
-QT       += core gui widgets webkitwidgets sql gui-private xml
+QT       += core gui widgets webkitwidgets sql gui-private xml dbus
+CONFIG   += debug
 
 
 TARGET = zeal
@@ -23,7 +24,10 @@ SOURCES += main.cpp\
     lineedit.cpp \
     zealsearchitemdelegate.cpp \
     zealsearchitemstyle.cpp \
-    zealsettingsdialog.cpp
+    zealsettingsdialog.cpp \
+    searchif.cpp\
+    searchifadaptor.cpp\
+    queryservice.cpp
 
 HEADERS  += mainwindow.h \
     zeallistmodel.h \
@@ -35,7 +39,10 @@ HEADERS  += mainwindow.h \
     zealsearchitemdelegate.h \
     zealsearchitemstyle.h \
     zealsettingsdialog.h \
-    xcb_keysym.h
+    xcb_keysym.h\
+    searchif.h\
+    searchifadaptor.h\
+    queryservice.h
 
 FORMS    += mainwindow.ui \
     zealsettingsdialog.ui
